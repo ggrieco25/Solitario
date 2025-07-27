@@ -173,7 +173,7 @@ class _GameScreenState extends State<GameScreen> {
 
             // Sezione mazzo esterno e re scartati
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [_buildMazzoEsterno(), _buildReScartati()],
             ),
           ],
@@ -213,7 +213,7 @@ class _GameScreenState extends State<GameScreen> {
               },
               child: Container(
                 margin: const EdgeInsets.all(3),
-                width: 48,
+                width: 42,
                 height: 67,
                 decoration: BoxDecoration(
                   color: const Color(0xFFFDF6E3),
@@ -292,7 +292,7 @@ class _GameScreenState extends State<GameScreen> {
             } else {
               return Container(
                 margin: const EdgeInsets.all(3),
-                width: 48,
+                width: 40,
                 height: 67,
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
