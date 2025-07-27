@@ -324,12 +324,22 @@ class _GameScreenState extends State<GameScreen> {
         actions: [
           TextButton(
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.pop(context); // chiudo il dialog
               setState(() {
-                gioco = Gioco();
+                gioco = Gioco(); // nuova partita
               });
             },
             child: const Text('Nuova partita'),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pop(context); // chiudo il dialog
+              Navigator.popUntil(
+                context,
+                ModalRoute.withName('/'),
+              ); // torno alla home
+            },
+            child: const Text('Torna alla Home'),
           ),
         ],
       ),
